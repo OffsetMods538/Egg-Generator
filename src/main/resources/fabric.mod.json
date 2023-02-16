@@ -29,7 +29,7 @@
 		}
 	],
 	"depends": {
-
+		"fabric-api": "*"
 	},
 	"suggests": {
 
