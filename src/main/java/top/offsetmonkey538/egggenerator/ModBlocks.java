@@ -9,12 +9,8 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import top.offsetmonkey538.egggenerator.block.AbstractEggGeneratorBlock;
-import top.offsetmonkey538.egggenerator.block.Tier1EggGeneratorBlock;
-import top.offsetmonkey538.egggenerator.block.Tier2EggGeneratorBlock;
-import top.offsetmonkey538.egggenerator.block.entity.AbstractEggGeneratorBlockEntity;
-import top.offsetmonkey538.egggenerator.block.entity.Tier1EggGeneratorBlockEntity;
-import top.offsetmonkey538.egggenerator.block.entity.Tier2EggGeneratorBlockEntity;
+import top.offsetmonkey538.egggenerator.block.*;
+import top.offsetmonkey538.egggenerator.block.entity.*;
 
 import static top.offsetmonkey538.egggenerator.EggGenerator.MOD_ID;
 
@@ -22,9 +18,11 @@ public class ModBlocks {
 
     public static final AbstractEggGeneratorBlock TIER_1_EGG_GENERATOR = register("tier_1_egg_generator", new Tier1EggGeneratorBlock());
     public static final AbstractEggGeneratorBlock TIER_2_EGG_GENERATOR = register("tier_2_egg_generator", new Tier2EggGeneratorBlock());
+    public static final AbstractEggGeneratorBlock TIER_3_EGG_GENERATOR = register("tier_3_egg_generator", new Tier3EggGeneratorBlock());
 
     public static final BlockEntityType<AbstractEggGeneratorBlockEntity> TIER_1_EGG_GENERATOR_ENTITY = register("tier_1_egg_generator_entity", Tier1EggGeneratorBlockEntity::new, TIER_1_EGG_GENERATOR);
     public static final BlockEntityType<AbstractEggGeneratorBlockEntity> TIER_2_EGG_GENERATOR_ENTITY = register("tier_2_egg_generator_entity", Tier2EggGeneratorBlockEntity::new, TIER_2_EGG_GENERATOR);
+    public static final BlockEntityType<AbstractEggGeneratorBlockEntity> TIER_3_EGG_GENERATOR_ENTITY = register("tier_3_egg_generator_entity", Tier3EggGeneratorBlockEntity::new, TIER_3_EGG_GENERATOR);
 
     private static <T extends Block> T register(String name, T block) {
         Registry.register(Registries.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, new FabricItemSettings()));

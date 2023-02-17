@@ -1,4 +1,5 @@
 {
     "block.egg-generator.tier_1_egg_generator": "Tier 1 Egg Generator",
-    "block.egg-generator.tier_2_egg_generator": "Tier 2 Egg Generator"
+    "block.egg-generator.tier_2_egg_generator": "Tier 2 Egg Generator",
+    "block.egg-generator.tier_3_egg_generator": "Tier 3 Egg Generator"
 }
