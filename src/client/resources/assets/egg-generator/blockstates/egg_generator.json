@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "egg-generator:block/egg_generator"
+        }
+    }
+}
