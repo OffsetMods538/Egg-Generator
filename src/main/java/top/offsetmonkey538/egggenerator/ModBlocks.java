@@ -19,10 +19,12 @@ public class ModBlocks {
     public static final AbstractEggGeneratorBlock TIER_1_EGG_GENERATOR = register("tier_1_egg_generator", new Tier1EggGeneratorBlock());
     public static final AbstractEggGeneratorBlock TIER_2_EGG_GENERATOR = register("tier_2_egg_generator", new Tier2EggGeneratorBlock());
     public static final AbstractEggGeneratorBlock TIER_3_EGG_GENERATOR = register("tier_3_egg_generator", new Tier3EggGeneratorBlock());
+    public static final AbstractEggGeneratorBlock TIER_4_EGG_GENERATOR = register("tier_4_egg_generator", new Tier4EggGeneratorBlock());
 
-    public static final BlockEntityType<AbstractEggGeneratorBlockEntity> TIER_1_EGG_GENERATOR_ENTITY = register("tier_1_egg_generator_entity", Tier1EggGeneratorBlockEntity::new, TIER_1_EGG_GENERATOR);
-    public static final BlockEntityType<AbstractEggGeneratorBlockEntity> TIER_2_EGG_GENERATOR_ENTITY = register("tier_2_egg_generator_entity", Tier2EggGeneratorBlockEntity::new, TIER_2_EGG_GENERATOR);
-    public static final BlockEntityType<AbstractEggGeneratorBlockEntity> TIER_3_EGG_GENERATOR_ENTITY = register("tier_3_egg_generator_entity", Tier3EggGeneratorBlockEntity::new, TIER_3_EGG_GENERATOR);
+    public static final BlockEntityType<Tier1EggGeneratorBlockEntity> TIER_1_EGG_GENERATOR_ENTITY = register("tier_1_egg_generator_entity", Tier1EggGeneratorBlockEntity::new, TIER_1_EGG_GENERATOR);
+    public static final BlockEntityType<Tier2EggGeneratorBlockEntity> TIER_2_EGG_GENERATOR_ENTITY = register("tier_2_egg_generator_entity", Tier2EggGeneratorBlockEntity::new, TIER_2_EGG_GENERATOR);
+    public static final BlockEntityType<Tier3EggGeneratorBlockEntity> TIER_3_EGG_GENERATOR_ENTITY = register("tier_3_egg_generator_entity", Tier3EggGeneratorBlockEntity::new, TIER_3_EGG_GENERATOR);
+    public static final BlockEntityType<Tier3EggGeneratorBlockEntity> TIER_4_EGG_GENERATOR_ENTITY = register("tier_4_egg_generator_entity", Tier3EggGeneratorBlockEntity::new, TIER_4_EGG_GENERATOR);
 
     private static <T extends Block> T register(String name, T block) {
         Registry.register(Registries.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
