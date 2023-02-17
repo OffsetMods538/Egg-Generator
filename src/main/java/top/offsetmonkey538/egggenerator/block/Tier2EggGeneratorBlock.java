@@ -8,6 +8,7 @@ import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import top.offsetmonkey538.egggenerator.ModBlocks;
 import top.offsetmonkey538.egggenerator.block.entity.Tier2EggGeneratorBlockEntity;
 
 public class Tier2EggGeneratorBlock extends AbstractEggGeneratorBlock {

@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import top.offsetmonkey538.egggenerator.block.ModBlocks;
 
 public class EggGenerator implements ModInitializer {
 
