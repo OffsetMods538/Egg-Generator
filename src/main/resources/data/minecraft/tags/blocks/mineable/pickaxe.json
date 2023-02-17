@@ -1,7 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "egg-generator:tier_1_egg_generator",
-        "egg-generator:tier_2_egg_generator"
-    ]
-}
