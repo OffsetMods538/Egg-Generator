@@ -21,10 +21,10 @@ public abstract class AbstractEggGeneratorBlockEntity extends BlockEntity implem
     private int generationTime;
     private int generationTimeLeft;
 
-    public AbstractEggGeneratorBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state, int generationTime) {
+    public AbstractEggGeneratorBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state, float generationTimeSeconds) {
         super(type, pos, state);
-        this.generationTime = generationTime;
-        this.generationTimeLeft = generationTime;
+        this.generationTime = (int) (generationTimeSeconds * 20);
+        this.generationTimeLeft = this.generationTime;
         this.inventory = new SimpleInventory(1);
     }
 
