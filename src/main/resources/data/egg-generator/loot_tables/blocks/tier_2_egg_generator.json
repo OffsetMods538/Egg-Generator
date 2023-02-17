@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "egg-generator:tier_1_egg_generator"
+                    "name": "egg-generator:tier_2_egg_generator"
                 }
             ]
         }
