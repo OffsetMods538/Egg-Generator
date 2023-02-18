@@ -1,7 +1,23 @@
 {
     "variants": {
-        "": {
-            "model": "egg-generator:block/tier_4_egg_generator"
+        "facing=north": {
+            "model": "egg-generator:block/tier_4_egg_generator",
+            "uvlock": true
+        },
+        "facing=east": {
+            "model": "egg-generator:block/tier_4_egg_generator",
+            "uvlock": true,
+            "y": 90
+        },
+        "facing=south": {
+            "model": "egg-generator:block/tier_4_egg_generator",
+            "uvlock": true,
+            "y": 180
+        },
+        "facing=west": {
+            "model": "egg-generator:block/tier_4_egg_generator",
+            "uvlock": true,
+            "y": 270
         }
     }
 }
