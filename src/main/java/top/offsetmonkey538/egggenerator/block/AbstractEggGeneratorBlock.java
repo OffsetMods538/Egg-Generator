@@ -12,7 +12,7 @@ import top.offsetmonkey538.egggenerator.block.entity.AbstractEggGeneratorBlockEn
 public abstract class AbstractEggGeneratorBlock extends BlockWithEntity {
 
     public AbstractEggGeneratorBlock(Settings settings) {
-        super(settings);
+        super(settings.nonOpaque());
     }
 
     @Override
