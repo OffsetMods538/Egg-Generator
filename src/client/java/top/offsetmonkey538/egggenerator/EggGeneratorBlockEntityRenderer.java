@@ -38,7 +38,7 @@ public class EggGeneratorBlockEntityRenderer implements BlockEntityRenderer<Abst
         matrices.push();
 
         matrices.scale(0.5f, 0.5f, 0.5f);
-        matrices.translate(0.75f, 0.63f, 1f);
+        matrices.translate(1f, 0.63f, 1f);
         matrices.multiply(RotationAxis.NEGATIVE_Y.rotationDegrees(entity.getCachedState().get(Properties.HORIZONTAL_FACING).asRotation() + rotation));
 
         this.entityRenderDispatcher.render(chicken, 0, 0, 0, 0, isTier4 ? tickDelta : 0, matrices, vertexConsumers, light);
