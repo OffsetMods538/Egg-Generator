@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DWD",
+        "ETE",
+        "DWD"
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "W": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "E": {
+            "item": "minecraft:egg"
+        },
+        "T": {
+            "item": "egg-generator:tier_2_egg_generator"
+        }
+    },
+    "result": {
+        "item": "egg-generator:tier_3_egg_generator",
+        "count": 1
+    }
+}

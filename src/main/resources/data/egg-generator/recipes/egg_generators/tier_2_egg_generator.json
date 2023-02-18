@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GWG",
+        "ETE",
+        "GWG"
+    ],
+    "key": {
+        "G": {
+            "item": "minecraft:gold_ingot"
+        },
+        "W": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "E": {
+            "item": "minecraft:egg"
+        },
+        "T": {
+            "item": "egg-generator:tier_1_egg_generator"
+        }
+    },
+    "result": {
+        "item": "egg-generator:tier_2_egg_generator",
+        "count": 1
+    }
+}
