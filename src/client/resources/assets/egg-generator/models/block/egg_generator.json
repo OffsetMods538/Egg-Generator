@@ -1,0 +1,145 @@
+{
+	"parent": "minecraft:block/block",
+	"textures": {
+		"particle": "minecraft:block/glass",
+		"glass": "minecraft:block/glass",
+		"grass": "minecraft:block/grass_block_top",
+		"poppy": "minecraft:block/poppy",
+		"dandelion": "minecraft:block/dandelion",
+        "tier": "missing"
+	},
+	"elements": [
+		{
+			"name": "Glass Shell",
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#glass"}
+			}
+		},
+		{
+			"name": "Ground",
+			"from": [1, 1, 1],
+			"to": [15, 5, 15],
+			"faces": {
+				"north": {"uv": [1, 0, 15, 4], "texture": "#tier"},
+				"east": {"uv": [1, 0, 15, 4], "texture": "#tier"},
+				"south": {"uv": [1, 0, 15, 4], "texture": "#tier"},
+				"west": {"uv": [1, 0, 15, 4], "texture": "#tier"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#grass", "tintindex": 0},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#tier"}
+			}
+		},
+		{
+			"name": "Poppy Part 1",
+			"from": [10, 5, 8],
+			"to": [12, 9, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [6, 7, 7], "rescale": true},
+			"faces": {
+				"north": {"uv": [5, 5, 12, 16], "texture": "#poppy"},
+				"east": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"south": {"uv": [5, 5, 12, 16], "texture": "#poppy"},
+				"west": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"up": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 2, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "Poppy Part 2",
+			"from": [11, 5, 7],
+			"to": [11, 9, 9],
+			"rotation": {"angle": -45, "axis": "y", "origin": [6, 7, 7], "rescale": true},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"east": {"uv": [5, 5, 12, 16], "texture": "#poppy"},
+				"south": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"west": {"uv": [5, 5, 12, 16], "texture": "#poppy"},
+				"up": {"uv": [0, 0, 2, 0], "rotation": 90, "texture": "#missing"},
+				"down": {"uv": [0, 0, 2, 0], "rotation": 270, "texture": "#missing"}
+			}
+		},
+		{
+			"name": "Poppy Part 1",
+			"from": [3, 5, 5],
+			"to": [5, 9, 5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [6, 7, 7], "rescale": true},
+			"faces": {
+				"north": {"uv": [5, 5, 12, 16], "texture": "#poppy"},
+				"east": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"south": {"uv": [5, 5, 12, 16], "texture": "#poppy"},
+				"west": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"up": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 2, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "Poppy Part 2",
+			"from": [4, 5, 4],
+			"to": [4, 9, 6],
+			"rotation": {"angle": -45, "axis": "y", "origin": [6, 7, 7], "rescale": true},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"east": {"uv": [5, 5, 12, 16], "texture": "#poppy"},
+				"south": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"west": {"uv": [5, 5, 12, 16], "texture": "#poppy"},
+				"up": {"uv": [0, 0, 2, 0], "rotation": 90, "texture": "#missing"},
+				"down": {"uv": [0, 0, 2, 0], "rotation": 270, "texture": "#missing"}
+			}
+		},
+		{
+			"name": "Dandelion Part 1",
+			"from": [8, 5, 3],
+			"to": [10, 9, 3],
+			"rotation": {"angle": -45, "axis": "y", "origin": [6, 7, 7], "rescale": true},
+			"faces": {
+				"north": {"uv": [5, 5, 11, 16], "texture": "#dandelion"},
+				"east": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"south": {"uv": [5, 5, 11, 16], "texture": "#dandelion"},
+				"west": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"up": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 2, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "Dandelion Part 2",
+			"from": [9, 5, 2],
+			"to": [9, 9, 4],
+			"rotation": {"angle": -45, "axis": "y", "origin": [6, 7, 7], "rescale": true},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"east": {"uv": [5, 5, 11, 16], "texture": "#dandelion"},
+				"south": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"west": {"uv": [5, 5, 11, 16], "texture": "#dandelion"},
+				"up": {"uv": [0, 0, 2, 0], "rotation": 90, "texture": "#missing"},
+				"down": {"uv": [0, 0, 2, 0], "rotation": 270, "texture": "#missing"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		1,
+		{
+			"name": "Poppy 1",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [2, 3]
+		},
+		{
+			"name": "Poppy 2",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [4, 5]
+		},
+		{
+			"name": "Dandelion 1",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [6, 7]
+		}
+	]
+}
