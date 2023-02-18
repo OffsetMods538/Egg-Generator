@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "egg-generator:block/egg_generator",
   "textures": {
-    "all": "egg-generator:block/tier_4_egg_generator"
+    "tier": "minecraft:block/diamond_block"
   }
 }
