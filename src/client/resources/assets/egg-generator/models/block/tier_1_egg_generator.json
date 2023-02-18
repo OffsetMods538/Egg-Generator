@@ -1,6 +1,6 @@
 {
 	"parent": "egg-generator:block/egg_generator",
 	"textures": {
-		"tier": "minecraft:block/dirt"
+		"tier": "minecraft:block/iron_block"
 	}
 }

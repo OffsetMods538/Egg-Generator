@@ -1,6 +1,6 @@
 {
   "parent": "egg-generator:block/egg_generator",
   "textures": {
-    "tier": "minecraft:block/diamond_block"
+    "tier": "minecraft:block/netherite_block"
   }
 }
