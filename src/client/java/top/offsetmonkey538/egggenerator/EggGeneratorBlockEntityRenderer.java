@@ -1,9 +1,9 @@
 package top.offsetmonkey538.egggenerator;
 
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.block.entity.BlockEntityRenderer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
-import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.ChickenEntity;
@@ -14,12 +14,11 @@ import top.offsetmonkey538.egggenerator.block.entity.AbstractEggGeneratorBlockEn
 import top.offsetmonkey538.egggenerator.block.entity.Tier4EggGeneratorBlockEntity;
 
 public class EggGeneratorBlockEntityRenderer implements BlockEntityRenderer<AbstractEggGeneratorBlockEntity> {
-    private final EntityRenderDispatcher entityRenderDispatcher;
     private ChickenEntity chicken;
     private World world;
 
     public EggGeneratorBlockEntityRenderer(BlockEntityRendererFactory.Context context) {
-        this.entityRenderDispatcher = context.getEntityRenderDispatcher();
+
     }
 
     @Override
@@ -41,7 +40,7 @@ public class EggGeneratorBlockEntityRenderer implements BlockEntityRenderer<Abst
         matrices.translate(1f, 0.63f, 1f);
         matrices.multiply(RotationAxis.NEGATIVE_Y.rotationDegrees(entity.getCachedState().get(Properties.HORIZONTAL_FACING).asRotation() + rotation));
 
-        this.entityRenderDispatcher.render(chicken, 0, 0, 0, 0, isTier4 ? tickDelta : 0, matrices, vertexConsumers, light);
+        MinecraftClient.getInstance().getEntityRenderDispatcher().render(chicken, 0, 0, 0, 0, isTier4 ? tickDelta : 0, matrices, vertexConsumers, light);
 
         matrices.pop();
     }
