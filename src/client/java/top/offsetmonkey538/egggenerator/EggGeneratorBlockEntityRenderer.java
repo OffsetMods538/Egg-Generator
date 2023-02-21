@@ -13,17 +13,17 @@ import net.minecraft.world.World;
 import top.offsetmonkey538.egggenerator.block.entity.AbstractEggGeneratorBlockEntity;
 import top.offsetmonkey538.egggenerator.block.entity.Tier4EggGeneratorBlockEntity;
 
-public class EggGeneratorBlockEntityRenderer implements BlockEntityRenderer<AbstractEggGeneratorBlockEntity> {
+public class EggGeneratorBlockEntityRenderer<T extends AbstractEggGeneratorBlockEntity> implements BlockEntityRenderer<T> {
     private ChickenEntity chicken;
     private World world;
 
-    public EggGeneratorBlockEntityRenderer(BlockEntityRendererFactory.Context context) {
+    public EggGeneratorBlockEntityRenderer(@SuppressWarnings("unused") BlockEntityRendererFactory.Context context) {
 
     }
 
     @Override
     @SuppressWarnings("DataFlowIssue")
-    public void render(AbstractEggGeneratorBlockEntity entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
+    public void render(T entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
         if (this.world == null) this.world = entity.getWorld();
         if (this.chicken == null) {
             this.chicken = EntityType.CHICKEN.create(world);
