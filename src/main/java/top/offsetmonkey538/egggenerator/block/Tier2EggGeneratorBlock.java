@@ -14,7 +14,7 @@ import top.offsetmonkey538.egggenerator.block.entity.Tier2EggGeneratorBlockEntit
 public class Tier2EggGeneratorBlock extends AbstractEggGeneratorBlock {
 
     public Tier2EggGeneratorBlock() {
-        super(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+        super(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK));
     }
 
     @Override
