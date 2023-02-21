@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import top.offsetmonkey538.egggenerator.block.*;
@@ -26,7 +27,7 @@ public class ModBlocks {
     public static final BlockEntityType<Tier4EggGeneratorBlockEntity> TIER_4_EGG_GENERATOR_ENTITY = register("tier_4_egg_generator_entity", Tier4EggGeneratorBlockEntity::new, TIER_4_EGG_GENERATOR);
 
     private static <T extends Block> T register(String name, T block) {
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, new FabricItemSettings().group(ItemGroup.REDSTONE)));
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
     }
 
