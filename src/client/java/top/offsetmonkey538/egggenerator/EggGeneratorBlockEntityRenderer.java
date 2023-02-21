@@ -8,7 +8,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.ChickenEntity;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.math.RotationAxis;
+import net.minecraft.util.math.Vec3f;
 import net.minecraft.world.World;
 import top.offsetmonkey538.egggenerator.block.entity.AbstractEggGeneratorBlockEntity;
 import top.offsetmonkey538.egggenerator.block.entity.Tier4EggGeneratorBlockEntity;
@@ -38,7 +38,7 @@ public class EggGeneratorBlockEntityRenderer<T extends AbstractEggGeneratorBlock
 
         matrices.translate(0.5f, 0.315f, 0.5f);
         matrices.scale(0.5f, 0.5f, 0.5f);
-        matrices.multiply(RotationAxis.NEGATIVE_Y.rotationDegrees(entity.getCachedState().get(Properties.HORIZONTAL_FACING).asRotation() + rotation));
+        matrices.multiply(Vec3f.NEGATIVE_Y.getDegreesQuaternion(entity.getCachedState().get(Properties.HORIZONTAL_FACING).asRotation() + rotation));
 
         MinecraftClient.getInstance().getEntityRenderDispatcher().render(chicken, 0, 0, 0, 0, isTier4 ? tickDelta : 0, matrices, vertexConsumers, light);
 
