@@ -2,11 +2,11 @@ package top.offsetmonkey538.egggenerator;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
 import static top.offsetmonkey538.egggenerator.ModBlocks.*;
 
@@ -29,9 +29,9 @@ public class EggGeneratorClient implements ClientModInitializer {
 		);
 
 
-		BlockEntityRendererFactories.register(TIER_1_EGG_GENERATOR_ENTITY, EggGeneratorBlockEntityRenderer::new);
-		BlockEntityRendererFactories.register(TIER_2_EGG_GENERATOR_ENTITY, EggGeneratorBlockEntityRenderer::new);
-		BlockEntityRendererFactories.register(TIER_3_EGG_GENERATOR_ENTITY, EggGeneratorBlockEntityRenderer::new);
-		BlockEntityRendererFactories.register(TIER_4_EGG_GENERATOR_ENTITY, EggGeneratorBlockEntityRenderer::new);
+		BlockEntityRendererRegistry.register(TIER_1_EGG_GENERATOR_ENTITY, EggGeneratorBlockEntityRenderer::new);
+		BlockEntityRendererRegistry.register(TIER_2_EGG_GENERATOR_ENTITY, EggGeneratorBlockEntityRenderer::new);
+		BlockEntityRendererRegistry.register(TIER_3_EGG_GENERATOR_ENTITY, EggGeneratorBlockEntityRenderer::new);
+		BlockEntityRendererRegistry.register(TIER_4_EGG_GENERATOR_ENTITY, EggGeneratorBlockEntityRenderer::new);
 	}
 }
