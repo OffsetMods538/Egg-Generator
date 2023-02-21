@@ -6,9 +6,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import top.offsetmonkey538.egggenerator.block.*;
 import top.offsetmonkey538.egggenerator.block.entity.*;
 
@@ -27,13 +26,13 @@ public class ModBlocks {
     public static final BlockEntityType<Tier4EggGeneratorBlockEntity> TIER_4_EGG_GENERATOR_ENTITY = register("tier_4_egg_generator_entity", Tier4EggGeneratorBlockEntity::new, TIER_4_EGG_GENERATOR);
 
     private static <T extends Block> T register(String name, T block) {
-        Registry.register(Registries.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
-        return Registry.register(Registries.BLOCK, new Identifier(MOD_ID, name), block);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
+        return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
     }
 
 
     private static <T extends BlockEntity, B extends Block> BlockEntityType<T> register(String name, FabricBlockEntityTypeBuilder.Factory<T> blockEntity, B block) {
-        return Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(MOD_ID, name), FabricBlockEntityTypeBuilder.create(blockEntity, block).build());
+        return Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(MOD_ID, name), FabricBlockEntityTypeBuilder.create(blockEntity, block).build());
     }
 
     public static void initialize() {
