@@ -36,8 +36,8 @@ public class EggGeneratorBlockEntityRenderer<T extends AbstractEggGeneratorBlock
 
         matrices.push();
 
+        matrices.translate(0.5f, 0.315f, 0.5f);
         matrices.scale(0.5f, 0.5f, 0.5f);
-        matrices.translate(1f, 0.63f, 1f);
         matrices.multiply(RotationAxis.NEGATIVE_Y.rotationDegrees(entity.getCachedState().get(Properties.HORIZONTAL_FACING).asRotation() + rotation));
 
         MinecraftClient.getInstance().getEntityRenderDispatcher().render(chicken, 0, 0, 0, 0, isTier4 ? tickDelta : 0, matrices, vertexConsumers, light);
