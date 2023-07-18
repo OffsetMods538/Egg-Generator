@@ -46,7 +46,7 @@ public abstract class AbstractEggGeneratorBlock extends BlockWithEntity {
     public BlockState getPlacementState(ItemPlacementContext context) {
         BlockState state = super.getPlacementState(context);
         if (state == null) return null;
-        return state.with(FACING, context.getPlayerFacing().getOpposite());
+        return state.with(FACING, context.getHorizontalPlayerFacing().getOpposite());
     }
 
     @Override
