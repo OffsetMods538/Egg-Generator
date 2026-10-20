@@ -5,7 +5,7 @@ issueTrackerURL="https://offsetmonkey538.top"
 
 [[mods]]
     modId="egg_generator_reforged"
-    version="1.0.1"
+    version="${modVersion}"
     displayName="Egg Generator Reforged"
     logoFile="assets/egg_generator_reforged/icon.png"
     description="${modDescription}"
@@ -23,5 +23,12 @@ issueTrackerURL="https://offsetmonkey538.top"
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1,1.20.2)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.egg_generator_reforged]]
+    modId="forgified-fabric-api"
+    mandatory=true
+    versionRange="*"
     ordering="NONE"
     side="BOTH"
