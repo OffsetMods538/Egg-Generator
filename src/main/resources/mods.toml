@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="${modLicense}"
+issueTrackerURL="https://offsetmonkey538.top"
+
+[[mods]]
+    modId="egg_generator_reforged"
+    version="1.0.1"
+    displayName="Egg Generator Reforged"
+    logoFile="assets/egg_generator_reforged/icon.png"
+    description="${modDescription}"
+    authors="OffsetMonkey538"
+    displayURL="https://offsetmonkey538.top"
+
+[[dependencies.egg_generator_reforged]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.egg_generator_reforged]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.20.2)"
+    ordering="NONE"
+    side="BOTH"
